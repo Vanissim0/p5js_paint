@@ -4,10 +4,15 @@ const clear = document.getElementById('clear');
 const paths = [];
 let currentPath = [];
 
+// function preload() {
+//     img = loadImage("sample-image.png");
+// }
 
 function setup() {
-    createCanvas(window.innerWidth, window.innerHeight);
+    img = createCanvas(window.innerWidth, window.innerHeight);
     background(255);
+    // img = createGraphics(4000, 4000);
+    
 }
 
 function draw() {
@@ -45,3 +50,19 @@ clear.addEventListener('click', () => {
     paths.splice(0);
     background(255);
 });
+
+// function keyTyped() {
+    
+ 
+//     // Pressing the "q" key to
+//     // save the image
+//     if (key === 'q') {
+//       img.save('saved-image', 'png');
+//     }
+// }
+
+function keyTyped(){
+    if (key === 'q') {
+        img.save("MyDrawing.png"); 
+    }
+}

@@ -52,5 +52,6 @@
     margin-bottom: 3px;
 }
 .trash {
+    cursor: pointer;
     width: 20px;
 }
